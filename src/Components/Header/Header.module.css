@@ -1,0 +1,257 @@
+.header {
+  height: 100px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.activeLink {
+  color: #6ab04c !important;
+}
+.navbar {
+  margin-left: 135px;
+  width: 488px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar a {
+  color: #1e1e1e;
+  font-family: Gotham Pro;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 3px solid transparent;
+  padding: 3px 8px;
+  stroke-dasharray: 50;
+  stroke-dashoffset: 50;
+}
+.navbar a:hover {
+  color: #6ab04c;
+  border-radius: 15px;
+  border: 3px solid #6ab04c;
+  padding: 3px 8px;
+  transition: 0.3s ease-in;
+}
+
+.button {
+  margin-left: 103px;
+  cursor: pointer;
+}
+.burger {
+  display: none;
+  z-index: 50;
+}
+.menuBody {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #6ab04c;
+  position: fixed;
+  z-index: 49;
+}
+.menuLinks {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.menuLinks a {
+  display: flex;
+  justify-content: center;
+  width: 170px;
+  color: #ffffff;
+  font-family: Gotham Pro;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 10px 15px;
+  border: 2px solid white;
+  border-radius: 15px;
+  margin: 5px;
+}
+.buyMenu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.65);
+  position: fixed;
+  z-index: 55;
+}
+.buyBody {
+  width: 1040px;
+  height: 250px;
+  border-radius: 30px;
+  background: #6ab04c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+.pib {
+  text-align: center;
+  width: 250px;
+  height: 48px;
+  border: 3px solid #ffffff;
+  box-sizing: border-box;
+  border-radius: 35px;
+  font-family: Gotham Pro;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  background-color: transparent;
+  color: white;
+}
+.pib::placeholder {
+  color: white;
+  font-family: Gotham Pro;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+}
+.count {
+  text-align: center;
+  width: 171px;
+  height: 48px;
+  font-family: Gotham Pro;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  border: 3px solid #ffffff;
+  box-sizing: border-box;
+  color: white;
+  border-radius: 35px;
+  background-color: transparent;
+}
+.count::placeholder {
+  color: white;
+  font-family: Gotham Pro;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+select {
+  text-align-last: center;
+  color: white;
+  background-color: transparent;
+  width: 250px;
+  height: 48px;
+  font-family: Gotham Pro;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  border: 3px solid #ffffff;
+  box-sizing: border-box;
+  border-radius: 35px;
+  outline: none;
+}
+.value {
+  text-align: center;
+  color: #6ab04c;
+  font-family: Gotham Pro;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+}
+input {
+  outline: none;
+}
+input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+input:focus:-moz-placeholder {
+  color: transparent;
+} /* FF 4-18 */
+input:focus::-moz-placeholder {
+  color: transparent;
+} /* FF 19+ */
+input:focus:-ms-input-placeholder {
+  color: transparent;
+} /* IE 10+ */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+.totalPrice {
+  font-family: Gotham Pro;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  color: white;
+}
+.totalPrice span {
+  font-family: Gotham Pro;
+  font-size: 43px;
+  font-style: normal;
+  font-weight: 700;
+  color: white;
+}
+.order {
+  margin-top: 50px;
+  display: flex;
+  width: 1025px;
+  justify-content: space-around;
+  margin-bottom: 40px;
+}
+
+.orderButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 252px;
+  height: 52px;
+  background: #ffffff;
+  border-radius: 45px;
+  color: #6ab04c;
+  font-family: Gotham Pro;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.cancel {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 20px;
+  right: 30px;
+  cursor: pointer;
+}
+@media screen and (min-width: 320px) and (max-width: 1040px) {
+  .button {
+    display: none;
+  }
+  .burger {
+    display: block;
+  }
+  .navbar {
+    display: none;
+  }
+  .header {
+    justify-content: space-between;
+    height: 60px;
+  }
+  .logo img {
+    width: 100px;
+  }
+  .logo {
+    margin-left: 15px;
+  }
+  .burger {
+    margin-right: 15px;
+  }
+}

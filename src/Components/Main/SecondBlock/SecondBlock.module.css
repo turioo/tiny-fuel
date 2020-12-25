@@ -1,0 +1,74 @@
+.SecondBlock {
+  background-color: white;
+  height: 440px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.mainText {
+  font-family: Gotham Pro;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  color: #1e1e1e;
+}
+.advItems {
+  margin-top: 67px;
+  width: 900px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-right: 50px;
+}
+.advantage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.count {
+  font-family: Gotham Pro;
+  font-size: 66px;
+  font-style: normal;
+  font-weight: 900;
+  color: #6ab04c;
+}
+.text {
+  margin-top: 15px;
+  font-family: Gotham Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 23px;
+  text-align: center;
+
+  color: #1e1e1e;
+}
+@media screen and (min-width: 320px) and (max-width: 840px) {
+  .advItems {
+    flex-direction: column;
+    width: auto;
+    margin-right: 0px;
+    margin-top: 10px;
+  }
+  .count {
+    font-size: 40px;
+  }
+  .text {
+    font-size: 22px;
+    margin: 0;
+  }
+  .mainText {
+    font-size: 35px;
+    text-align: center;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  .advantage {
+    margin-top: 17px;
+  }
+  .advantage:nth-child(1) {
+    margin-top: 5px;
+  }
+}

@@ -1,0 +1,99 @@
+.FirstBlock {
+  height: 640px;
+  background-image: url("./../../../images/bgMain2.svg");
+  background-color: #6ab04c;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: 45%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.text {
+  color: white;
+  font-family: Gotham Pro;
+  font-size: 64px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+.button {
+  margin-top: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(0, 0, 0);
+  width: 290px;
+  height: 80px;
+  border-radius: 45px;
+  font-family: Gotham Pro;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+  mix-blend-mode: multiply;
+}
+
+.items {
+  width: 1030px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  z-index: 3;
+}
+.intro {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+}
+.back {
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  z-index: 1;
+}
+.video {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  z-index: 2;
+}
+@media screen and (min-width: 320px) and (max-width: 1040px) {
+  .intro {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 555px) {
+  .text {
+    color: white;
+    font-family: Gotham Pro;
+    font-size: 30px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .items {
+    width: 100vw;
+    justify-content: center;
+  }
+  .FirstBlock {
+    height: 100px;
+    background-image: none;
+  }
+  .button {
+    display: none;
+  }
+}
+@media screen and (min-width: 556px) {
+  .text {
+    margin-left: 25px;
+  }
+  .button {
+    margin-left: 25px;
+  }
+}

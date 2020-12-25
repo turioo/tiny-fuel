@@ -1,0 +1,96 @@
+.SecondBlock {
+  height: 350px;
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+}
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.text {
+  display: flex;
+  flex-direction: column;
+}
+.topText {
+  width: 470px;
+  font-family: Gotham Pro;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 104.7%;
+  color: #1e1e1e;
+}
+.downText {
+  margin-top: 28px;
+  width: 470px;
+  font-family: Gotham Pro;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  color: #1e1e1e;
+}
+.person {
+  margin-left: 105px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.name {
+  margin-top: 15px;
+  font-family: Gotham Pro;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+}
+.atitude {
+  margin-top: 4px;
+  font-family: Gotham Pro;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+}
+.photo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 141px;
+  height: 141px;
+  border: 1.77px dashed #6ab04c;
+  box-sizing: border-box;
+  border-radius: 73px;
+}
+@media screen and (min-width: 320px) and (max-width: 1040px) {
+  .main {
+    flex-direction: column;
+  }
+  .topText {
+    width: auto;
+    font-size: 20px;
+    text-align: center;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .downText {
+    width: auto;
+    font-size: 13px;
+    text-align: center;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .SecondBlock {
+    height: 500px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .person {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+  .photo img {
+    width: 125px;
+  }
+}
