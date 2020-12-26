@@ -44,6 +44,7 @@ a {
 }
 @media screen and (min-width: 320px) and (max-width: 1040px) {
   .image {
+    display: none;
     margin-top: 35px;
     width: 200px;
   }
@@ -70,7 +71,7 @@ a {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    height: 105vh;
+    height: 100vh;
   }
   .links img {
     width: 40px;

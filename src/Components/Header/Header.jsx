@@ -15,7 +15,7 @@ const Header = () => {
         menu = 
         <div className={s.menuBody} onClick={()=> setOpen(false)}>
             <div className={s.menuLinks}>
-                <NavLink to="/main" onClick={()=> setOpen(false)} >Головна</NavLink>
+                <NavLink to="/" onClick={()=> setOpen(false)} >Головна</NavLink>
                 <NavLink to="/about" onClick={()=> setOpen(false)} >про компанію</NavLink>
                 <NavLink to="/drivers" onClick={()=> setOpen(false)} >водіям</NavLink>
                 <NavLink to="/bonus" onClick={()=> setOpen(false)} >бонуси</NavLink>
@@ -119,7 +119,7 @@ const Header = () => {
 
     return (
         <div className={s.header}>
-             <NavLink to="/main"><div className={s.logo}><img src={logo} alt="logo" /></div></NavLink>
+             <NavLink to="/"><div className={s.logo}><img src={logo} alt="logo" /></div></NavLink>
             <div className={s.navbar}>
                 <NavLink to="/about" activeClassName={s.activeLink}>про компанію</NavLink>
                 <NavLink to="/drivers" activeClassName={s.activeLink}>водіям</NavLink>

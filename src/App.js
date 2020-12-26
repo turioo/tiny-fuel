@@ -44,8 +44,7 @@ class App extends React.Component {
           ))}
         </p> */}
         <div className="app-wrapper-content">
-          <Redirect exact from="/" to="/main" />
-          <Route path="/main" component={() => <Main prices={line} />} />
+          <Route exact path="/" component={() => <Main />} />
           <Route path="/about" component={About} />
           <Route path="/drivers" component={Drivers} />
           <Route path="/bonus" component={Bonus} />
